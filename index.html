@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="keywords" content="Programador - Desarrollador - Diseñador">
+  <meta name="description" content="Diseño web, programador back y frontend.">
+  <meta name="author" content="Fzzio">
+  <meta name="copyright" content="Fzzio">
+  <meta name="google-site-verification" content="jRsexUj_it0Y0epMzXoAgwCXK5U_vrvYqlpWbCyIdHU" />
+  <meta name="robots" content="index">6
+  <title>Fabrizio Perrone</title>
+  <link rel="icon" type="image/png" href="assets/img/person.png">
+
+
+  <link rel="shortcut icon" href="assets/img/person.png" type="image/x-icon">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/themify-icons.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/owl-carousel/owl.carousel.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/nice-select/css/nice-select.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/fancybox/css/jquery.fancybox.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/virtual.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
+</head>
+<body class="theme-green">
+
+
+  <!-- Fzzio. -->
+  <div class="btn-back_to_top">
+    <span class="ti-arrow-up"></span>
+  </div>
+  
+  <!-- Fzzio. -->
+
+  
+  <div class="vg-page page-home" id="home" style="background-image: url(assets/img/bg_image_1.jpg)">
+    <!-- Navbar -->
+    <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
+      <div class="container">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
+          <span class="ti-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <nav>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link" data-animate="scrolling">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link" data-animate="scrolling">Contacto y Certificados</a>
+            </li>
+            </li>
+          </ul>
+        </nav>
+        </div>
+      </div>
+    </div> <!-- End Navbar -->
+    
+    <!-- Caption header -->
+    <div class="caption-header text-center wow zoomInDown">
+      <h5 class="fw-normal">¡Bienvenido!</h5>
+      <h1 class="fw-light mb-4">Soy <a><b class="fg-theme-purple">Fabrizio Perrone</b></a></h1>
+      <div class="badge">Junior Developer & Trainee Full-Stack Developer.</div>
+    </div>           <!-- Fzzio. -->
+  </div>
+  
+<div class="vg-page page-about" id="about">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-4 py-3">
+        <div class="bv-card">
+          <div class="image-slider">
+            <img id="slider-image" src="assets/img/fabri1.jpeg" alt="Fabri" style="width: 100%; max-width: 500px; height: auto; object-fit: contain; border-radius: 10px;">
+            <div class="slider-buttons">
+              <button onclick="prevImage()">⟨</button>
+              <button onclick="nextImage()">⟩</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<script>
+  const images = [
+    "assets/img/fabri1.jpeg",
+    "assets/img/fabri2.jpeg"
+  ];
+  let currentIndex = 0;
+
+  function showImage(index) {
+    const img = document.getElementById("slider-image");
+    img.src = images[index];
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  }
+  
+  setInterval(() => {
+    nextImage();
+  }, 3000);
+</script>
+
+
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <h1 class="fw-light">Fabrizio Perrone</h1>
+          <h5 class="fg-theme mb-3">Desarrollador web y programador de aplicaciones y Bots.</h5>
+          <p class="text-muted"><b>Diseñador</b> web, <b>Programador</b> Junior & Trainee Full-Stack</p>
+          <ul class="theme-list">
+            <li><b>Nacio En:</b> Buenos Aires, Argentina</li>
+            <li><b>Vive en:</b> Buenos Aires, Argentina</li>
+            <li><b>Edad:</b> 15 </li>
+            <li><b>Genero:</b> Masculino</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5">
+      <h1 class="text-center fw-normal wow fadeIn">Mis Habilidades</h1>
+      <div class="row py-3">
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp">Habilidades de desarrollo.</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">JavaScript</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">90%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Lua</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">HTML + CSS</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">NodeJS</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Python</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">90%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Java</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">60%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp">Habilidades de diseño.</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Diseños webs</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Diseño de Logos</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">90%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="container-card">
+	
+    <!--Cierre de seccion de modals-->
+            <!--Fzzio -->
+  <div class="vg-page page-service">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Servicios.</div>
+      </div>
+      <h1 class="fw-normal text-center wow fadeInUp">Especialidades:</h1>
+      <div class="row mt-5">
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Diseño web.</h4>
+              <ul>
+                <li><b>✅ Responsivo</b></li>
+                <li><b>🤵‍♂️ Diseño profesional</b></li>
+                <li><b>💻 Contenido claro y bien estructurado</b></li>
+                <li><b>🛡️ Anti ataques DDoS.</b></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Desarrollo de bots.</h4>
+              <li><b>✅ Código complejo, eficiente y limpio con base en los requerimientos.</b></li>
+              <li><b>🤵‍♂️ Diseño profesional</b></li>
+              <li><b>💻 Buen uso de cada lenguaje dependiendo del bot.</b></li>
+              <li><b>🛡️ Anti ataques DDoS.</b></li>
+              </p>
+            </div>
+          </div>
+          <!-- Fzzio. -->
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Diseño de logos</h4>
+              <li><b>🤵‍♂️ Diseño profesional de logotipos para <b>Webs</b> y <b>VideoJuegos</b>.</p></b></li></b>
+            </div>
+          </div>
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Seguridad, Confianza y Accesibilidad en Cada Proyecto.</h4>
+              <li><b>🔐 Pagos 100% seguros</b></li>
+              <li><b>🤝 Relación basada en la confianza</b></li>
+              <li><b>💼 Diversidad de métodos de pago</b></li>
+               <li><b>💰 Costos justos y adecuados.</b></li>
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="vg-page page-funfact" style="background-image: url(assets/img/bg_banner.jpg);">
+    <div class="container">
+      <div class="row section-counter">
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="30">20</h1>
+          <span>Clientes</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="40">+50</h1>
+          <span>Proyectos Completados</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="8">15</h1>
+          <span>Proyectos Futuros</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="100%">100%</h1>
+          <span>Satifaccion de los clientes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Portfolio page -->
+  <div id="contact"
+  <div class="vg-page page-client" id="newprojects">
+    <div class="newprojects-title">
+      <h1>Contacto y Certificados</h1>
+     </div>
+
+      <div class="bv-newprojects">
+  <div class="bv-card">
+    <div class="image-slider">
+      <img id="slider-image-dev" src="assets/img/desarrollo1.jpg" alt="Fabrizio Perrone" style="width: 100%; max-width: 500px; height: auto; object-fit: contain; border-radius: 10px;">
+      <div class="slider-buttons">
+        <button onclick="prevImageDev()">⟨</button>
+        <button onclick="nextImageDev()">⟩</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const imagesDev = [
+    "assets/img/desarrollo1.jpg",
+    "assets/img/desarrollo2.jpg",
+    "assets/img/desarrollo3.jpg",
+    "assets/img/desarrollo4.jpg"
+  ];
+  let currentIndexDev = 0;
+
+  function showImageDev(index) {
+    const img = document.getElementById("slider-image-dev");
+    img.src = imagesDev[index];
+  }
+
+  function nextImageDev() {
+    currentIndexDev = (currentIndexDev + 1) % imagesDev.length;
+    showImageDev(currentIndexDev);
+  }
+
+  function prevImageDev() {
+    currentIndexDev = (currentIndexDev - 1 + imagesDev.length) % imagesDev.length;
+    showImageDev(currentIndexDev);
+  }
+
+  setInterval(() => {
+    nextImageDev();
+  }, 3000);
+</script>
+
+<style>
+  .image-slider {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .slider-buttons button {
+    background: rgba(0,0,0,0.4);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  .slider-buttons button:hover {
+    background: rgba(0,0,0,0.7);
+  }
+</style>
+
+<div class="col-md-6 col-lg-3 py-3">
+  <div class="float-lg-left">
+    <p>Contacto</p>
+    <hr class="divider">
+    <ul class="list-unstyled">
+      <li>devfabrizioperrone@gmail.com</li>
+    </ul>
+
+<div style="text-align: center;">
+  <a href="https://api.whatsapp.com/send/?phone=%2B5491172378518&text&type=phone_number&app_absent=0"
+     target="_blank"
+     style="display: inline-block; padding: 15px 30px; background-color: #25D366; color: white; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 18px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp"
+         style="height: 24px; vertical-align: middle; margin-right: 10px;">
+    WhatsApp
+  </a>
+</div>
+
+
+  </div>
+</div>
+
+    </a>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <footer style="background-color: #111; padding: 20px; text-align: center; color: white;">
+  <p class="text-center mb-0 mt-4">Copyright &copy;2025. Todos los derechos reservados. - Fabrizio Perrone.</p>
+  </a>
+</footer>
+  </div> <!-- End footer -->
+  
+  
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+    
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+  <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+    
+  <script src="assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    
+  <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+    
+  <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+    
+  <script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+
+  <script src="assets/vendor/wow/wow.min.js"></script>
+
+  <script src="assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
+
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+
+  <script src="assets/js/google-maps.js"></script>
+    
+  <script src="assets/js/topbar-virtual.js"></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+</body>
+</html> 
